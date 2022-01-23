@@ -11,19 +11,23 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	debug = false,
 	sources = {
-		-- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		formatting.prettier.with({
+			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+			extra_filetypes = { "solidity" },
+		}),
 		formatting.stylua,
 		formatting.black.with({ extra_args = { "--fast" } }),
 		diagnostics.flake8,
 	},
+	-- Format on save
 	on_attach = function(client)
-        if client.resolved_capabilities.document_formatting then
-            vim.cmd([[
+		if client.resolved_capabilities.document_formatting then
+			vim.cmd([[
             augroup LspFormatting
                 autocmd! * <buffer>
                 autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
             augroup END
             ]])
-        end
-    end,
+		end
+	end,
 })
