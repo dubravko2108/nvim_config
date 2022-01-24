@@ -17,7 +17,7 @@ null_ls.setup({
 		}),
 		formatting.stylua,
 		formatting.black.with({ extra_args = { "--fast" } }),
-		diagnostics.flake8,
+		diagnostics.flake8.with({ extra_args = { "--ignore=E501" } }),
 	},
 	-- Format on save
 	on_attach = function(client)
