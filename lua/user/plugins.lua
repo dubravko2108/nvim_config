@@ -54,9 +54,9 @@ return packer.startup(function(use)
 	use("lewis6991/impatient.nvim") -- Improve startup time for nvim
 
 	-- Colorschemes
-	use("lunarvim/colorschemes") -- A bunch of colorschemes you can try out
 	use("lunarvim/darkplus.nvim")
-	use("Mofiqul/dracula.nvim")
+	use("dracula/vim")
+	--	use("Mofiqul/dracula.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
