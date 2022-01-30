@@ -51,10 +51,12 @@ return packer.startup(function(use)
 	use("akinsho/bufferline.nvim") -- Tablike buffers listed on top
 	use("moll/vim-bbye") -- Closing buffers
 	use("akinsho/toggleterm.nvim") -- Floating terminal on shortcut
+	use("lewis6991/impatient.nvim") -- Improve startup time for nvim
 
 	-- Colorschemes
 	use("lunarvim/colorschemes") -- A bunch of colorschemes you can try out
 	use("lunarvim/darkplus.nvim")
+	use("Mofiqul/dracula.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
