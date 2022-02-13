@@ -53,6 +53,7 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim") -- Floating terminal on shortcut
 	use("lewis6991/impatient.nvim") -- Improve startup time for nvim
 	use("nvim-lualine/lualine.nvim") -- Lua version of Lighline/Powerline
+	use("lukas-reineke/indent-blankline.nvim") -- Indentation vertical lines
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")
