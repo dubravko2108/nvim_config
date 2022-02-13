@@ -52,6 +52,7 @@ return packer.startup(function(use)
 	use("moll/vim-bbye") -- Closing buffers
 	use("akinsho/toggleterm.nvim") -- Floating terminal on shortcut
 	use("lewis6991/impatient.nvim") -- Improve startup time for nvim
+	use("nvim-lualine/lualine.nvim") -- Lua version of Lighline/Powerline
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")
