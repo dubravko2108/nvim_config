@@ -12,7 +12,7 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		formatting.prettier.with({
-			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+			extra_args = { "--use-tabs", "--tab-width 4", "--single-quote", "--jsx-single-quote" },
 			extra_filetypes = { "solidity" },
 		}),
 		formatting.stylua,
